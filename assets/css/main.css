@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    --roboto: Roboto;
+    --oswald: Oswald;
+    --noto: Noto Sans;
+    --text-black: #252525;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--noto);
+    height: 100vh;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: #252525;
+}
+
+.container {
+    width: 100%;
+    max-width: 85%;
+    margin: 0 auto;
+}
+
+.topNav {
+    position: relative;
+    top: 0;
+    height: 7rem;
+    width: 100%;
+    z-index: 801;
+    transition: top .3s,opacity .3s;
+}
+
+.topNavContainer {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    height: 100%;
+    padding-left: 8rem;
+    padding-right: 10rem;
+}
+
+.navLogo img {
+    height: 3rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    pointer-events: none;
+    position: relative;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+.topNavLinks {
+    margin-left: 2rem;
+    display: flex;
+}
+
+.topNavLinks {
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+    list-style: none;
+    height: 100%;
+}
+
+.navItems >a {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    transition: color .1s ease-out;
+    text-transform: lowercase;
+    font-weight: 600;
+    padding: 0 .5rem;
+}
+
+section {
+    height: 330px;
+    width: 100%;
+    position: relative;
+    box-shadow: 0px 4px 50px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 28px;
+    margin-bottom: 10%;
+}
+
+section h1 {
+    font-family: var(--oswald);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    text-transform: uppercase;
+    color: var(--text-black);
+    margin: 0 3rem;
+}
+
+section p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    width: 50%;
+    color: var(--text-black);
+    margin: 0 3.3rem;
+}
+
+#welcome {
+    background: url(servers.png);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#welcome render {
+    width: 510px;
+    height: 360px;
+    background: url(../imgs/1.png);
+    background-size: cover;
+    position: relative;
+    left: 7%;
+    top: -4%;
+}
+
+#whyUS {
+    background: url(servers.png);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#whyUS render {
+    width: 510px;
+    height: 360px;
+    background: url(../imgs/2.png);
+    background-size: cover;
+    position: relative;
+    left: 7%;
+    top: -4%;
+}
+
+#shop {
+    background: url(servers.png);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#shop render {
+    width: 510px;
+    height: 360px;
+    background: url(../imgs/3.png);
+    background-size: cover;
+    position: relative;
+    left: 7%;
+    top: -4%;
+}
+
+.sharoskyFooter {
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+.sharoskyFooter a {
+    margin: 0 5%;
+    font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 980px) {
+    .navLogo {
+        display: block;
+        position: relative;
+        left: 6%;
+    }
+    .topNavLinks {
+        display: none;
+    }
+    render {
+        display: none;
+    }
+    section h1 {
+        text-align: center;
+    }
+    section p {
+        text-align:center; 
+        vertical-align: middle;
+        display: table-cell;   
+    }
+}
